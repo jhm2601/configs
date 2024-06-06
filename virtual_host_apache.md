@@ -37,4 +37,6 @@ guardar el archivo.
 Luego corremos esto para que apache renocozca esta config
 sudo a2ensite dev.fischer.com
 
+sudo /etc/init.d/apache2 reload
+
 al final reinicioar el servidor.
