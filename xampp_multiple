@@ -1,0 +1,20 @@
+## Diferentes versiones de xampp
+
+Descargar la version de xampp de quieres, vas a la pagina principal y de xampp a la pesta;a de descargas.
+
+Al instalar el next next y llegar al punto de ver la carpeta de xampp cambiar el nombre por xampp_php7.
+
+Editar variables de entorno del sistema (buscador de windows).
+
+dar al boton variables de entorno
+
+ir a Path (doble click)
+
+C:\xampp\php
+
+cambiar por 
+
+C:\xampp_php7\php
+
+
+
