@@ -46,6 +46,21 @@ sudo add-apt-repository ppa:ondrej/php
 ## otras instalaciones de php
 sudo apt install php8.2-common php8.2-mysql php8.2-xml php8.2-xmlrpc php8.2-curl php8.2-gd php8.2-imagick php8.2-cli php8.2-dev php8.2-imap php8.2-mbstring php8.2-opcache php8.2-soap php8.2-zip php8.2-redis php8.2-intl
 
+### instalar mysql
+
+```
+sudo apt-get install -y mysql-server php-mysql
+sudo service mysql restart
+sudo mysql_secure_installation
+    #> Validate password component: N
+    #> New password: MyPassword
+    #> Remove anonymous users: Y
+    #> Disallow root login remotely: Y
+    #> Reload privilege tables now: Y
+sudo service mysql stop
+sudo usermod -d /var/lib/mysql mysql
+sudo service mysql start ```
+
 # revisar instalaciones relacionadas con php instaladas en el sistema linux
 sudo dpkg --get-selections | grep php
 
