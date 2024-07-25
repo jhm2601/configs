@@ -48,7 +48,7 @@ sudo apt install php8.2-common php8.2-mysql php8.2-xml php8.2-xmlrpc php8.2-curl
 
 ### instalar mysql
 
-```
+`
 sudo apt-get install -y mysql-server php-mysql
 sudo service mysql restart
 sudo mysql_secure_installation
@@ -59,7 +59,8 @@ sudo mysql_secure_installation
     #> Reload privilege tables now: Y
 sudo service mysql stop
 sudo usermod -d /var/lib/mysql mysql
-sudo service mysql start ```
+sudo service mysql start `
+
 
 # revisar instalaciones relacionadas con php instaladas en el sistema linux
 sudo dpkg --get-selections | grep php
@@ -74,3 +75,7 @@ sudo apt install php7.4
 Dell es mi usuario de Ubuntu
 Sudo chown -R dell /var/www
 
+
+## ver status de lo instalado
+
+service --status-all
