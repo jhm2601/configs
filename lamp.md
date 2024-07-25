@@ -48,8 +48,7 @@ sudo apt install php8.2-common php8.2-mysql php8.2-xml php8.2-xmlrpc php8.2-curl
 
 ### instalar mysql
 
-`
-sudo apt-get install -y mysql-server php-mysql
+`sudo apt-get install -y mysql-server php-mysql
 sudo service mysql restart
 sudo mysql_secure_installation
     #> Validate password component: N
@@ -78,21 +77,21 @@ Sudo chown -R dell /var/www
 
 ## ver status de lo instalado
 
-service --status-all
+`service --status-all`
 
 
 ### instalar phpmyadmin en wsl
 
-`$ sudo apt-get install -y phpmyadmin
+`$ sudo apt-get install -y phpmyadmin`
+
     #> Use apache2
     #> Configure db with dbconfig-common: Yes
     #> Random password (leave password blank)
 
 Editar el siguente archivo:
 
-sudo nano /etc/apache2/apache2.conf
+`sudo nano /etc/apache2/apache2.conf`
 
 En la ultima linea pegar el siguente include
 
-Include /etc/phpmyadmin/apache.conf
-
+`Include /etc/phpmyadmin/apache.conf`
