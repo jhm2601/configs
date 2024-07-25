@@ -79,3 +79,20 @@ Sudo chown -R dell /var/www
 ## ver status de lo instalado
 
 service --status-all
+
+
+### instalar phpmyadmin en wsl
+
+`$ sudo apt-get install -y phpmyadmin
+    #> Use apache2
+    #> Configure db with dbconfig-common: Yes
+    #> Random password (leave password blank)
+
+Editar el siguente archivo:
+
+sudo nano /etc/apache2/apache2.conf
+
+En la ultima linea pegar el siguente include
+
+Include /etc/phpmyadmin/apache.conf
+
