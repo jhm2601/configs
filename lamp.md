@@ -98,13 +98,13 @@ En la ultima linea pegar el siguente include
 
 ### desinstalar y volver a instalar mysql
 
-Uninstalling:
+##### Uninstalling:
 
-sudo apt-get purge mysql-server
-sudo apt-get autoremove
-sudo apt-get autoclean
-Re-Installing:
+sudo apt autoremove --purge mysql-server\* mariadb-server\*
+sudo rm -rf /var/lib/mysql
+sudo rm -rf /etc/mysql/
+sudo mkdir -p /etc/mysql/conf.d
 
-sudo apt-get update
-sudo apt-get install mysql-server
+#### install:
+sudo apt install mysql-server
 
