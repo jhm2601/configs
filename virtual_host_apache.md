@@ -55,10 +55,9 @@ abrir el programa y configurar alli los host como en el archivo de host
 En la raiz del usuario de windows C:\Users\juanh hay que crear un archivo .wslconfig
 
 Dentro del archivo hay que colocal el seguiente contenido
-`
-[wsl2]
+
+`[wsl2]
 
 memory=4GB      # Limits VM memory in WSL 2 up to 4GB
 processors=4    # Makes the WSL 2 VM use two virtual processors
-localhostForwarding=true
-`
+localhostForwarding=true`
