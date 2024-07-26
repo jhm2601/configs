@@ -95,3 +95,16 @@ Editar el siguente archivo:
 En la ultima linea pegar el siguente include
 
 `Include /etc/phpmyadmin/apache.conf`
+
+### desinstalar y volver a instalar mysql
+
+Uninstalling:
+
+sudo apt-get purge mysql-server
+sudo apt-get autoremove
+sudo apt-get autoclean
+Re-Installing:
+
+sudo apt-get update
+sudo apt-get install mysql-server
+
